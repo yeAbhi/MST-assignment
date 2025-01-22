@@ -6,8 +6,10 @@ import autoprefixer from 'autoprefixer'
 export default defineConfig(() => {
   return {
     base: './',
-    // root: './src',
-    build: { manifest: true, outDir: './dist'},
+    build: {
+      // outDir: 'build',
+      manifest: true, outDir: './dist'
+    },
     css: {
       postcss: {
         plugins: [
